@@ -218,8 +218,8 @@ img { max-width: 100%; }
 
 .top-content .text .logo a {
 	display: inline-block;
-	width: 130px;
-	height: 130px;
+	width: 200px;
+	height: 200px;
 	background: url(../img/logo.png) center center no-repeat;
 }
 
