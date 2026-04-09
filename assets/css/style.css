@@ -13,12 +13,12 @@ strong { font-weight: 600; }
 a, a:hover, a:focus { color: #ff8a38; text-decoration: none; transition: all .3s; }
 
 h1, h2 {
-	margin-top: 10px;
-	font-size: 64px;
+	font-size: 48px;
     font-weight: 300;
-    color: #555;
-    line-height: 50px;
+    color: #ffffff;
+    line-height: 30px;
     font-style: italic;
+	font-style: bold;
 }
 
 h3 {
