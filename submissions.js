@@ -1,12 +1,19 @@
-function displayListing(mod_name, developer_name, supported_game_versions, download_link, description, order) {
+var mods = [];
+var mods_length = mods.length;
 
+function displayListing() {
+    // iterate over the entire array and display listings one at a time
+    for (var i = 0; i < mods_length; i++){
+        var current_mod = mods.at(i);
+        current_mod.mod_name.alert
+    }
+    
 }
 
 function testing(){
     alert (mods)
 }
 
-var mods = [];
 
 mods.push({
     "mod_name": "AFUSeizurePrevention",
@@ -26,4 +33,4 @@ mods.push({
     "order": "1"
 })
 
-testing();
+displayListing();
