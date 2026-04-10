@@ -12,7 +12,7 @@ function displayListing() {
 }
 
 function testing(){
-    alert (mods)
+    alert (mods.at(0).mod_name)
 }
 
 
@@ -43,5 +43,5 @@ mods.push({
     "order": "2"
 })
 
-displayListing();
-//testing();
+//displayListing();
+testing();
