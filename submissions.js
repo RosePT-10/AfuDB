@@ -5,7 +5,7 @@ function displayListing() {
     // iterate over the entire array and display listings one at a time
     for (var i = 0; i < mods_length; i++){
         var current_mod = mods.at(i);
-        current_mod.mod_name.alert;
+        return current_mod.mod_name;
     }
     
 }
@@ -33,4 +33,13 @@ mods.push({
     "order": "1"
 })
 
-displayListing();
+mods.push({
+    "mod_name": "TimerMod",
+    "developer_name": "Knight-Ragu",
+    "supported_game_versions": "v0.26",
+    "download_link": "https://github.com/Knight-Ragu/TimerMod",
+    "description": "Timer mod for Airframe Ultra, for racing against yourself on the track! Adds an in-game timer that automatically starts/stops when races begin/end. Keeps track of your best times for each map, and each bike on each map! Individual 'splits' as well as your fastest pace finishing each race Works for beta 2 and 3, don't know about beta 1",
+    "order": "2"
+})
+
+alert(displayListing())
