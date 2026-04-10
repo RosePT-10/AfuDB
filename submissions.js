@@ -5,7 +5,7 @@ function displayListing() {
     // iterate over the entire array and display listings one at a time
     for (var i = 0; i < mods_length; i++){
         var current_mod = mods.at(i);
-        current_mod.mod_name.alert
+        current_mod.mod_name.alert;
     }
     
 }
