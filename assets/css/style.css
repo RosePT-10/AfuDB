@@ -41,6 +41,80 @@ img { max-width: 100%; }
 ::-moz-selection { background: #ff8a38; color: #fff; text-shadow: none; }
 ::selection { background: #ff8a38; color: #fff; text-shadow: none; }
 
+/***** Mod listing display *****/
+.mod_container_class {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(400px, 3fr));
+	grid-auto-flow: row dense;
+	grid-row-end: 100px;
+	background-color: rgb(255, 255, 255);
+	padding: 100px;
+	align-content: center;
+}
+.mod_container_class div {
+	background-color: #f1f1f1;
+	border: 10px solid rgb(255, 255, 255);
+	padding: 10px;
+	font-size: 10px;
+	text-align: center;
+	max-width: 100ch;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.mod_container_class div img.image_cell {
+	background-color: #f1f1f1;
+	border: 0px solid rgb(255, 255, 255);
+	padding: 3px;
+	font-size: 20px;
+	font-style: italic;
+	font-weight: 900;
+	text-align: left;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.mod_container_class div div.title_cell {
+	background-color: #f1f1f1;
+	border: 0px solid rgb(255, 255, 255);
+	padding: 3px;
+	font-size: 20px;
+	font-style: italic;
+	font-weight: 900;
+	color: rgb(0, 0, 0);
+	text-align: left;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.mod_container_class div div.dev_cell {
+	background-color: #f1f1f1;
+	border: 0px solid rgb(255, 255, 255);
+	padding: 3px;
+	font-size: 15px;
+	color: rgb(102, 102, 102);
+	text-align: left;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.mod_container_class div div.desc_cell {
+	background-color: #f1f1f1;
+	border: 0px solid rgb(255, 255, 255);
+	padding: 3px;
+	font-size: 15px;
+	color: rgb(62, 62, 62);
+	text-align: left;
+	max-height: 100px;
+	white-space: wrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+
+
 
 /***** Loader *****/
 

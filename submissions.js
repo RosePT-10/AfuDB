@@ -14,8 +14,8 @@ function displayListing() {
         var desc = document.createElement("div");
 
         //image.innerHTML += `${item.image_link}`
-        //image.setAttribute('class', 'image_cell', 'src', item.image_link)
-        //cell.appendChild(image);
+        image.setAttribute('src', `assets/mod_img/${item.order}.png`, 'class', 'image_cell')
+        cell.appendChild(image);
         
         title.innerHTML += `${item.mod_name}`
         title.setAttribute('class', 'title_cell')
