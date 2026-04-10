@@ -48,7 +48,10 @@ img { max-width: 100%; }
 	grid-auto-flow: row dense;
 	grid-row-end: 100px;
 	background-color: rgb(255, 255, 255);
-	padding: 100px;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 	align-content: center;
 }
 .mod_container_class div {
