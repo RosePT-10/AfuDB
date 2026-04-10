@@ -3,16 +3,16 @@ var mods_length = mods.length;
 
 function displayListing() {
     // iterate over the entire array and display listings one at a time
-    for (var i = 0; i < mods_length; i++){
-        var current_mod = mods.at(i);
-        console.log(current_mod.mod_name);
-        alert (current_mod.mod_name);
-    }
+    mods.forEach(function (item, index) {
+    //console.log(item, index);
+    let textNode = document.createTextNode(item.mod_name); 
+    document.body.appendChild(textNode);
+    });
     
 }
 
 function testing(){
-    alert (mods.at(0).mod_name)
+    alert (mods.at(2).mod_name)
 }
 
 
@@ -44,4 +44,4 @@ mods.push({
 })
 
 //displayListing();
-testing();
+//testing();
