@@ -8,15 +8,20 @@ function displayListing() {
         //let br = document.createElement('br');
         let element = document.getElementById('mod_container_id');
         var cell = document.createElement("div");
-        var title = document.createElement("div", {className:'title_cell'});
-        var dev = document.createElement("div", {className:'dev_cell'});
-        var desc = document.createElement("div", {className:'desc_cell'});
+        var image = document.createElement("img");
+        var title = document.createElement("div");
+        var dev = document.createElement("div");
+        var desc = document.createElement("div");
 
+        //image.innerHTML += `${item.image_link}`
+        //image.setAttribute('class', 'image_cell', 'src', item.image_link)
+        //cell.appendChild(image);
+        
         title.innerHTML += `${item.mod_name}`
         title.setAttribute('class', 'title_cell')
         cell.appendChild(title);
 
-        dev.innerHTML += `${item.developer_name}`
+        dev.innerHTML += `By ${item.developer_name}`
         dev.setAttribute('class', 'dev_cell')
         cell.appendChild(dev);
 
