@@ -10,6 +10,7 @@ function displayListing() {
         var cell = document.createElement("div");
         var image = document.createElement("img");
         var title = document.createElement("div");
+        var link = document.createElement("a");
         var dev = document.createElement("div");
         var desc = document.createElement("div");
 
@@ -17,8 +18,10 @@ function displayListing() {
         image.setAttribute('src', `assets/mod_img/${item.order}.png`, 'class', 'image_cell')
         cell.appendChild(image);
         
-        title.innerHTML += `${item.mod_name}`
+        link.innerHTML += `${item.mod_name}`
         title.setAttribute('class', 'title_cell')
+        link.setAttribute('href', `${item.download_link}`)
+        title.appendChild(link);
         cell.appendChild(title);
 
         dev.innerHTML += `By ${item.developer_name}`
@@ -73,15 +76,6 @@ mods.push({
     "download_link": "https://github.com/Knight-Ragu/TimerMod",
     "description": "Timer mod for Airframe Ultra, for racing against yourself on the track! Adds an in-game timer that automatically starts/stops when races begin/end. Keeps track of your best times for each map, and each bike on each map! Individual 'splits' as well as your fastest pace finishing each race Works for beta 2 and 3, don't know about beta 1",
     "order": "2"
-})
-
-mods.push({
-    "mod_name": "UPEAddons",
-    "developer_name": "RosePT-10",
-    "supported_game_versions": ["v0.26"],
-    "download_link": "https://github.com/RosePT-10/UPEAddons",
-    "description": "Extension of UPEAssetSwapper for use in Airframe Ultra: Ultimate Premuim Edition (AFU: UPE). Adds silly mods and memes to the game.",
-    "order": "3"
 })
 
 mods.push({
