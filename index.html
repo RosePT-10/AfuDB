@@ -94,9 +94,27 @@
 		<div style="padding-top: 40px;">
 			<h2 style="align-self: center">Mods</h2>
 		</div>
+		<div style="padding-top: 30px;">
+			 <input id="search-bar" 
+			 		type="text" 
+					placeholder="Search.."
+					onchange="displayListing()">
+		</div>
+		<div style="padding-top: 10px;">
+			<label for="version-drop-down">Choose a game version:</label>
+			<select name="version-drop-down" id="version-drop-down" onchange="displayListing()">
+				<option value="Any">Any</option>
+				<option value="Character Creator">Character Creator</option>
+				<option value="Beta 1">Beta 1</option>
+				<option value="Beta 2">Beta 2</option>
+				<option value="Beta 3">Beta 3</option>
+				<option value="Beta 4">Beta 4</option>
+				<option value="Beta 5">Beta 5</option>
+			</select>
+		</div>
 		<div class="mod_container_class" id="mod_container_id">
 			<script>
-				displayListing();
+				displayListing()
 			</script>
 		</div>		
         
