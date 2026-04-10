@@ -5,22 +5,35 @@ function displayListing() {
     // iterate over the entire array and display listings one at a time
     mods.forEach(function (item, index) {
         //console.log(item, index);
-        let br = document.createElement('br');
-        let element = document.getElementById('modListings');
+        //let br = document.createElement('br');
+        let element = document.getElementById('mod_container_id');
+        var cell = document.createElement("div");
+        var title = document.createElement("div", {className:'title_cell'});
+        var dev = document.createElement("div", {className:'dev_cell'});
+        var desc = document.createElement("div", {className:'desc_cell'});
 
-        element.innerHTML += `${item.mod_name}`
-        element.appendChild(br);
-        element.innerHTML += `${item.developer_name}`
-        element.appendChild(br);
-        element.innerHTML += `${item.supported_game_versions}`
-        element.appendChild(br);
-        element.innerHTML += `${item.download_link}`
-        element.appendChild(br);
-        element.innerHTML += `${item.description}`
-        element.appendChild(br);
-        element.innerHTML += `${item.order}`
-        element.appendChild(br);
-        element.appendChild(br);    
+        title.innerHTML += `${item.mod_name}`
+        title.setAttribute('class', 'title_cell')
+        cell.appendChild(title);
+
+        dev.innerHTML += `${item.developer_name}`
+        dev.setAttribute('class', 'dev_cell')
+        cell.appendChild(dev);
+
+        desc.innerHTML += `${item.description}`
+        desc.setAttribute('class', 'desc_cell')
+        cell.appendChild(desc);
+
+        //cell.innerHTML += `${item.supported_game_versions}`
+        //cell.appendChild(br);
+        //cell.innerHTML += `${item.download_link}`
+        //cell.appendChild(br);
+
+        //cell.innerHTML += `${item.order}`
+        //cell.appendChild(br);
+        //cell.appendChild(br);   
+        
+        element.appendChild(cell);
     });
     
 }
@@ -55,4 +68,22 @@ mods.push({
     "download_link": "https://github.com/Knight-Ragu/TimerMod",
     "description": "Timer mod for Airframe Ultra, for racing against yourself on the track! Adds an in-game timer that automatically starts/stops when races begin/end. Keeps track of your best times for each map, and each bike on each map! Individual 'splits' as well as your fastest pace finishing each race Works for beta 2 and 3, don't know about beta 1",
     "order": "2"
+})
+
+mods.push({
+    "mod_name": "UPEAddons",
+    "developer_name": "RosePT-10",
+    "supported_game_versions": ["v0.26"],
+    "download_link": "https://github.com/RosePT-10/UPEAddons",
+    "description": "Extension of UPEAssetSwapper for use in Airframe Ultra: Ultimate Premuim Edition (AFU: UPE). Adds silly mods and memes to the game.",
+    "order": "3"
+})
+
+mods.push({
+    "mod_name": "UPEAssetSwapper",
+    "developer_name": "RosePT-10",
+    "supported_game_versions": ["v0.26"],
+    "download_link": "https://github.com/RosePT-10/UPEAssetSwapper",
+    "description": "Melon Loader mod to replace assets in the game Airframe Ultra. Was created for use in Aiframe Ulta: Ultimate Premium Edition (UPE), a mod which replaces game assets with memes. Currently it is non functional. I started my Melon Loader modding journey with this but hit a wall and couldn't figure it out. I then got UPEAddons working and that was a huge success. I plan to come back to this tool at a later time. Until this mod has a release posted, assume that it doesnt do anything.",
+    "order": "4"
 })

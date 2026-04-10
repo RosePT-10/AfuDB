@@ -84,11 +84,69 @@
         </div>
         
         <!-- Services --> <!-- THIS IS THE PART THAT HAS ALL OF THE MOD LISTINGS, WILL NEED TO BE MAJORLY REDESIGNED -->
-		 <div id="modListings">
+		<div>
+			<h2 style="align-self: center;">Mods</h2>
+		</div>
+		<style>
+			.mod_container_class {
+			display: grid;
+			grid-template-columns: 33% 33% 33%;
+			grid-auto-flow: row dense;
+			grid-auto-rows: 200px;
+			background-color: rgb(255, 255, 255);
+			padding: 100px;
+			align-content: center;
+			}
+			.mod_container_class div {
+			background-color: #f1f1f1;
+			border: 10px solid rgb(255, 255, 255);
+			padding: 10px;
+			font-size: 10px;
+			text-align: center;
+			max-width: 100ch;
+  			white-space: nowrap;
+ 			overflow: hidden;
+  			text-overflow: ellipsis;
+			}
+			.mod_container_class div div.title_cell {
+			background-color: #f1f1f1;
+			border: 0px solid rgb(255, 255, 255);
+			padding: 3px;
+			font-size: 20px;
+			text-align: left;
+  			white-space: nowrap;
+ 			overflow: hidden;
+  			text-overflow: ellipsis;
+			}
+			.mod_container_class div div.dev_cell {
+			background-color: #f1f1f1;
+			border: 0px solid rgb(255, 255, 255);
+			padding: 3px;
+			font-size: 15px;
+			text-align: left;
+  			white-space: nowrap;
+ 			overflow: hidden;
+  			text-overflow: ellipsis;
+			}
+			.mod_container_class div div.desc_cell {
+			background-color: #f1f1f1;
+			border: 0px solid rgb(255, 255, 255);
+			padding: 3px;
+			font-size: 15px;
+			text-align: left;
+			-webkit-line-clamp: 3;
+			line-clamp: 3;
+  			white-space: wrap;
+			word-wrap: break-word;
+ 			overflow: hidden;
+  			text-overflow: ellipsis;
+			}
+		</style>
+		<div class="mod_container_class" id="mod_container_id">
 			<script>
 				displayListing();
 			</script>
-		</div>					
+		</div>		
         <div class="services-container section-container">
 	        <div class="container">
 	            <div class="row">
