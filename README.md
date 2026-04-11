@@ -31,7 +31,7 @@ Each bullet point will start with a quick explanation of what to do, written wit
 - Look for a previous entry with multiple supported versions to see how it should be formatted. All versions are kept inside the braces ``[]`` and each version is inside quotation marks ``""`` and each are sepperated by commas ``,``.
 ![A screenshot of the submissions.js file focused on how a properly formatted supported game versions field should look](/assets/readme_img/Screenshot%202026-04-10%20180101.png)
 - Once every field has been updated, save your changes. You'll notice the main page has a "Your fork is 1 commit ahead of RosePT-10/AfuDB:main" if you did it right. One more commit before you can send the pull request to us:
-- Submit your mod image (following the requirments listed above) inside the ``mod_img`` folder. THe file structure is assets/mod_img/[mod name].png
+- Submit your mod image (following the requirments listed above) inside the ``mod_img`` folder. The file structure is assets/mod_img/[mod name].png
   - In order to submit your **REQUIRED IMAGE SUBMISSION**, click the "Add file" button at the top and select "Upload files"
   - You may now drag and drop your mod image. **The image must be exactly 2000 x 1000 pixels in size and in the .png format. Do not submit images of any other size or format.**
   - Commit the change (do not make another pull request, just click the green button).
