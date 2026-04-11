@@ -21,7 +21,7 @@ Airframe Ultra Mod Database. Directly inspired by the Rain World Mod Database by
   - Beta 5
 - Look for a previous entry with multiple supported versions for how it should be formatted. All versions are kept inside the braces ``[]`` and each version is inside quotation marks ``""`` and each are sepperated by commas ``,``.
 ![A screenshot of the submissions.js file focused on how a properly formatted supported game versions field should look](https://github.com/RosePT-10/AfuDB/blob/9c647ce8d42996fe5d99b94cec7fe2ff042dabfb/assets/readme_img/Screenshot%202026-04-10%20180101.png)
-- **The** ``order`` **field is used for your REQUIRED image submission.** Set the order field to +1 the last submission. If the last submission has ``"order": "4"`` then yours should be ``"order": "5"``. Once every field has been updated, save your changes and create your new fork.
+- **The** ``order`` **field is used for your REQUIRED IMAGE SUBMISSION.** Set the order field to +1 the last submission. If the last submission has ``"order": "4"`` then yours should be ``"order": "5"``. Once every field has been updated, save your changes and create your new fork.
 - In order to submit your image, you first need to navigate to your new fork:
   - Click "Code" at the top left of the screen to get back to the main page for the repo.
   - On the right side of the screen under the "About" description, click on the "forks" button
