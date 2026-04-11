@@ -31,7 +31,7 @@ function displayListing() {
 
                 // assemble the nested cells
                 // image
-                image.setAttribute('src', `assets/mod_img/${item.mod_name}.png`, 'class', 'image_cell')
+                image.setAttribute('src', `assets/mod_img/${item.developer_name}${item.mod_id}.png`, 'class', 'image_cell')
                 cell.appendChild(image);
                 
                 // title with link to mod page
@@ -70,7 +70,8 @@ mods.push({
     "developer_name": "RosePT-10",
     "supported_game_versions": ["Beta 1", "Beta 2", "Beta 3", "Beta 4", "Beta 5"],
     "download_link": "https://github.com/RosePT-10/AFUSeizurePrevention",
-    "description": "A mod which alters the lighting effect of the Riot Stick and EMP Grenades, as well as visually removing flashbangs entirely, to prevent seizures. "
+    "description": "A mod which alters the lighting effect of the Riot Stick and EMP Grenades, as well as visually removing flashbangs entirely, to prevent seizures. ",
+    "mod_id": "1"
 })
 
 mods.push({
@@ -78,7 +79,8 @@ mods.push({
     "developer_name": "RosePT-10",
     "supported_game_versions": ["Beta 4"],
     "download_link": "https://github.com/RosePT-10/AFU-Ultimate-Premium-Edition",
-    "description": "A mod for Airframe Ultra which makes extensive changes to... pretty much everything. It's AFU Repainted if you know what that means. If you don't, its just replacing the games assets with a bunch of memes."
+    "description": "A mod for Airframe Ultra which makes extensive changes to... pretty much everything. It's AFU Repainted if you know what that means. If you don't, its just replacing the games assets with a bunch of memes.",
+    "mod_id": "2"
 })
 
 mods.push({
@@ -86,7 +88,8 @@ mods.push({
     "developer_name": "RosePT-10",
     "supported_game_versions": ["Beta 4"],
     "download_link": "https://github.com/RosePT-10/UPEAssetSwapper",
-    "description": "Melon Loader mod to replace assets in the game Airframe Ultra. Was created for use in Aiframe Ulta: Ultimate Premium Edition (UPE), a mod which replaces game assets with memes. Currently it is non functional. I started my Melon Loader modding journey with this but hit a wall and couldn't figure it out. I then got UPEAddons working and that was a huge success. I plan to come back to this tool at a later time. Until this mod has a release posted, assume that it doesnt do anything."
+    "description": "Melon Loader mod to replace assets in the game Airframe Ultra. Was created for use in Aiframe Ulta: Ultimate Premium Edition (UPE), a mod which replaces game assets with memes. Currently it is non functional. I started my Melon Loader modding journey with this but hit a wall and couldn't figure it out. I then got UPEAddons working and that was a huge success. I plan to come back to this tool at a later time. Until this mod has a release posted, assume that it doesnt do anything.",
+    "mod_id": "3"
 })
 
 mods.push({
@@ -95,4 +98,5 @@ mods.push({
     "supported_game_versions": ["Beta 1", "Beta 2", "Beta 3"],
     "download_link": "https://github.com/Knight-Ragu/TimerMod",
     "description": "Timer mod for Airframe Ultra, for racing against yourself on the track!",
+    "mod_id": "1"
 })
