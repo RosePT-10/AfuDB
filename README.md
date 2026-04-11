@@ -6,7 +6,6 @@ Airframe Ultra Mod Database. Directly inspired by the Rain World Mod Database by
 ### Requirements
 - **Your submission must include an image.** It needs to be exactly 2000 x 1000 pixels in size and must be either .png or .jpeg. The file name can *technically* be whatever you want, but it is highly encouraged to name it after the name of your mod. That makes it less likely for file name conflicts to occur.
 - **You must include a link to download your mod.** Github is not required but is encouraged.
-- **The name of your mod must be unique.** The database uses mod names for organizing mods and mod images, having an identical mod name to someone else would both affect the database and make things confusing for everyone.
 
 ### Instructions
 Each bullet point will start with a quick explanation of what to do, written with the assumption that you are familiar with Github. If you are not familiar with github, read the following indented bullet points for further clarification.
