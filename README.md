@@ -36,5 +36,5 @@ Airframe Ultra Mod Database. Directly inspired by the Rain World Mod Database by
 - In order to make a pull request, click the "Code" tab at the top of the screen to get to the main page for your fork.
 - There should be a tab which says "This branch is 2 commits ahead of RosePT-10/AfuDB:master". On the right side of that tab, click "Contribute" and then "Open pull request".
 - **Make the title of the pull request "New Submission [order number]"**. If your order number is 5, the title should be "New Submission 5".
-- Now just simply click the green "Create a pull request" button (also leave "Allow edits by maintainers" checked as that will make it easier for everyone if we can correct simple mistakes without having to ask you to do it yourself. Do not **expect** us to make corrections for you, format your submission appropriately.)
+- Now just simply click the green "Create a pull request" button! (also leave "Allow edits by maintainers" checked as that will make it easier for everyone if we can correct simple mistakes without having to ask you to do it yourself. Do not **expect** us to make corrections for you, format your submission appropriately.)
 - We will accept the pull request whenever someone gets around to it.
