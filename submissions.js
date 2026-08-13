@@ -121,7 +121,7 @@ mods.push({
 
 mods.push({
     "mod_name": "Speedometer",
-    "developer_name": "Astelle",
+    "developer_name": "AstelleBT-02",
     "supported_game_versions": ["Beta 4"],
     "download_link": "https://github.com/AstelleBT-02/AFU-Speedometer",
     "description": "Add's a center screen speedometer which displays ground speed in a more truthful unit than the hud speedometer's \"kmh\"",
